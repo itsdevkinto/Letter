@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Letter</title>
+<style>
+:root{
+  --bg:#fbf7f4; --fg:#2e2a2b; --muted:#8a7f82; --accent:#c9778b; --line:#eadfe0;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#1c1819; --fg:#f0e8e9; --muted:#a39699; --accent:#e29aab; --line:#3a3234; color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#1c1819; --fg:#f0e8e9; --muted:#a39699; --accent:#e29aab; --line:#3a3234; color-scheme:dark}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--fg);
+  font-family:Georgia,"Times New Roman",serif;line-height:1.75;font-size:18px}
+main{max-width:34rem;margin:0 auto;padding:3rem 1.5rem 4rem}
+.to{font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 .6rem}
+.rule{width:2.5rem;height:2px;background:var(--accent);border:0;margin:0 0 2rem;opacity:.7}
+p{margin:0 0 1.4rem}
+.intro{color:var(--muted);font-style:italic}
+.end{margin-top:2.2rem;padding-top:1.4rem;border-top:1px solid var(--line);color:var(--muted)}
+.fade{opacity:0;transform:translateY(8px);animation:in .9s ease forwards}
+@keyframes in{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.fade{animation:none;opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<main>
+  <hr class="rule fade">
+  <p class="intro fade" style="animation-delay:.15s">Hi, it might’ve taken so long to give this to you, but I remembered my promise, and I wanted to make sure it reached you.</p>
+  <p class="fade" style="animation-delay:.3s">I wanted to be honest about something. I think it’s fair to say I’ve liked you all this time, and that you made me feel special. These feelings should have faded a long time ago, but despite the distance and the decisions I’ve made, you still cross my mind.</p>
+  <p class="fade" style="animation-delay:.45s">I’ve always thought you were beautiful, but it was more than that. I liked the person I got to know in you.</p>
+  <p class="fade" style="animation-delay:.6s">I also want to share why I distanced myself. I didn’t feel ready for anything more. Even now, I don’t feel like I’m in a place where I can pursue you romantically. Sometimes I catch myself thinking that your world feels so far from mine, and I end up holding myself back before anything can even happen. I’ve always been the type of person to look for what could go wrong rather than assume the best, because I have to be careful and make things work out. I don’t have a safety net, so I have to play it safe most of the time.</p>
+  <p class="fade" style="animation-delay:.75s">I don’t even know if you ever saw me that way, and I’m a little nervous telling you all this, since nothing was ever really established between us. But despite that, bahala na. I’m not telling you this because I expect anything from you. I just wanted to be honest about how I felt.</p>
+  <p class="end fade" style="animation-delay:.9s">It was nice getting to talk to you again. You don’t have to reply if you don’t want to. I hope things continue to go well for you, and I genuinely wish you the best.</p>
+</main>
+</body>
+</html>
